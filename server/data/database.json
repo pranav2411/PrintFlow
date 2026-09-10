@@ -1,0 +1,381 @@
+{
+  "superadmins": [
+    {
+      "id": "sa_1",
+      "username": "admin",
+      "password_hash": "$2a$10$Kip20o29kH1zVHonl2ziceKCX9/9/qIXDLP23MexMpfjiuIrcQek.",
+      "name": "Platform Superadmin",
+      "created_at": "2026-09-07T15:25:57.591Z"
+    }
+  ],
+  "stores": [
+    {
+      "id": "store_campus",
+      "name": "Campus Print Hub",
+      "slug": "campus-print",
+      "username": "campus",
+      "password_hash": "$2a$10$WNuCD.Qr3pY1035MnDonkOO/rQ8snU3uoYWjTl1x2pr006VAcIJ0S",
+      "email": "campus@printhub.local",
+      "phone": "+91 98765 43210",
+      "address": "North Gate Commercial Complex, University Campus",
+      "currency": "INR",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "is_active": true,
+      "created_at": "2026-09-07T15:25:57.592Z"
+    },
+    {
+      "id": "store_metro",
+      "name": "Metro Digital Xerox",
+      "slug": "metro-xerox",
+      "username": "metro",
+      "password_hash": "$2a$10$WNuCD.Qr3pY1035MnDonkOrcKvW8NhtLI70oihi25lDMBwe26qXby",
+      "email": "metro@xerox.local",
+      "phone": "+91 98123 45678",
+      "address": "Shop 14, Metro Station Concourse, Central Line",
+      "currency": "INR",
+      "lat": 28.6195,
+      "lng": 77.2145,
+      "is_active": true,
+      "created_at": "2026-09-07T15:25:57.592Z"
+    }
+  ],
+  "store_pricing": {
+    "store_campus": {
+      "bw_rate": 2,
+      "color_rate": 10,
+      "duplex_discount": 0.5
+    },
+    "store_metro": {
+      "bw_rate": 2.5,
+      "color_rate": 12,
+      "duplex_discount": 0.5
+    }
+  },
+  "store_gsm_tiers": {
+    "store_campus": [
+      {
+        "id": "gsm_c1",
+        "name": "70 GSM Standard (Economy)",
+        "weight_gsm": 70,
+        "extra_cost": 0
+      },
+      {
+        "id": "gsm_c2",
+        "name": "75 GSM Executive Bond",
+        "weight_gsm": 75,
+        "extra_cost": 1
+      },
+      {
+        "id": "gsm_c3",
+        "name": "100 GSM Premium Heavy",
+        "weight_gsm": 100,
+        "extra_cost": 3
+      },
+      {
+        "id": "gsm_c4",
+        "name": "180 GSM Glossy Photo Card",
+        "weight_gsm": 180,
+        "extra_cost": 8
+      }
+    ],
+    "store_metro": [
+      {
+        "id": "gsm_m1",
+        "name": "70 GSM Normal Copier",
+        "weight_gsm": 70,
+        "extra_cost": 0
+      },
+      {
+        "id": "gsm_m2",
+        "name": "80 GSM Premium Paper",
+        "weight_gsm": 80,
+        "extra_cost": 1.5
+      },
+      {
+        "id": "gsm_m3",
+        "name": "100 GSM Bond Paper",
+        "weight_gsm": 100,
+        "extra_cost": 3.5
+      },
+      {
+        "id": "gsm_m4",
+        "name": "200 GSM Photo Sheet",
+        "weight_gsm": 200,
+        "extra_cost": 10
+      }
+    ]
+  },
+  "orders": [
+    {
+      "id": "ord_1788799047017_1dut5",
+      "token_number": "TK-105",
+      "status": "COMPLETED",
+      "created_at": "2026-09-07T16:37:27.017Z",
+      "printed_at": "2026-09-07T16:39:52.845Z",
+      "completed_at": "2026-09-10T09:52:41.983Z",
+      "file_deleted": true,
+      "store_id": "store_campus",
+      "original_filename": "2 Documents (part1.pdf, part2.pdf)",
+      "file_path": "/Users/pranavkhandelwal/Projects/PrintFileSystem/server/uploads/1788799047016-104230620-part1.pdf",
+      "file_name": "1788799047016-104230620-part1.pdf",
+      "file_type": "application/pdf",
+      "pages": 2,
+      "color_mode": "bw",
+      "gsm_tier_id": "gsm_70",
+      "gsm_name": "70 GSM Standard (Economy)",
+      "orientation": "portrait",
+      "copies": 1,
+      "is_duplex": false,
+      "total_amount_inr": 4,
+      "documents_count": 2,
+      "documents_list": [
+        {
+          "filename": "part1.pdf",
+          "pages": 1,
+          "copies": 1
+        },
+        {
+          "filename": "part2.pdf",
+          "pages": 1,
+          "copies": 1
+        }
+      ],
+      "calculation": {
+        "pages": 2,
+        "sheets": 2,
+        "copies": 1,
+        "colorMode": "Black & White",
+        "baseRatePerPage": 2,
+        "gsmTier": "70 GSM Standard (Economy)",
+        "gsmSurcharge": 0,
+        "isDuplex": false,
+        "singleCopyTotal": 4,
+        "grandTotalINR": 4
+      }
+    },
+    {
+      "id": "ord_1788799041353_0crv2",
+      "token_number": "TK-104",
+      "status": "COMPLETED",
+      "created_at": "2026-09-07T16:37:21.353Z",
+      "printed_at": "2026-09-07T16:39:52.096Z",
+      "completed_at": "2026-09-10T09:52:43.713Z",
+      "file_deleted": true,
+      "store_id": "store_campus",
+      "original_filename": "doc2.pdf",
+      "file_path": "/Users/pranavkhandelwal/Projects/PrintFileSystem/server/uploads/1788799041349-920321318-doc2.pdf",
+      "file_name": "1788799041349-920321318-doc2.pdf",
+      "file_type": "application/pdf",
+      "pages": 1,
+      "color_mode": "bw",
+      "gsm_tier_id": "gsm_75",
+      "gsm_name": "70 GSM Standard (Economy)",
+      "orientation": "landscape",
+      "copies": 1,
+      "is_duplex": false,
+      "total_amount_inr": 2,
+      "documents_count": 1,
+      "documents_list": [
+        {
+          "filename": "doc2.pdf",
+          "pages": 1,
+          "copies": 1
+        }
+      ],
+      "calculation": {
+        "pages": 1,
+        "sheets": 1,
+        "copies": 1,
+        "colorMode": "Black & White",
+        "baseRatePerPage": 2,
+        "gsmTier": "70 GSM Standard (Economy)",
+        "gsmSurcharge": 0,
+        "isDuplex": false,
+        "singleCopyTotal": 2,
+        "grandTotalINR": 2
+      }
+    },
+    {
+      "id": "ord_1788799041353_2x683",
+      "token_number": "TK-103",
+      "status": "COMPLETED",
+      "created_at": "2026-09-07T16:37:21.353Z",
+      "printed_at": "2026-09-07T16:39:50.097Z",
+      "completed_at": "2026-09-10T09:52:49.267Z",
+      "file_deleted": true,
+      "store_id": "store_campus",
+      "original_filename": "doc1.pdf",
+      "file_path": "/Users/pranavkhandelwal/Projects/PrintFileSystem/server/uploads/1788799041348-110767413-doc1.pdf",
+      "file_name": "1788799041348-110767413-doc1.pdf",
+      "file_type": "application/pdf",
+      "pages": 1,
+      "color_mode": "color",
+      "gsm_tier_id": "gsm_100",
+      "gsm_name": "70 GSM Standard (Economy)",
+      "orientation": "portrait",
+      "copies": 2,
+      "is_duplex": false,
+      "total_amount_inr": 20,
+      "documents_count": 1,
+      "documents_list": [
+        {
+          "filename": "doc1.pdf",
+          "pages": 1,
+          "copies": 2
+        }
+      ],
+      "calculation": {
+        "pages": 1,
+        "sheets": 1,
+        "copies": 2,
+        "colorMode": "Color",
+        "baseRatePerPage": 10,
+        "gsmTier": "70 GSM Standard (Economy)",
+        "gsmSurcharge": 0,
+        "isDuplex": false,
+        "singleCopyTotal": 10,
+        "grandTotalINR": 20
+      }
+    },
+    {
+      "id": "ord_1788799020927_2qhjq",
+      "token_number": "TK-102",
+      "status": "COMPLETED",
+      "created_at": "2026-09-07T16:37:00.927Z",
+      "printed_at": "2026-09-07T16:39:48.296Z",
+      "completed_at": "2026-09-10T09:52:47.299Z",
+      "file_deleted": true,
+      "store_id": "store_campus",
+      "original_filename": "Multi_File_Bundle_2_Pages.pdf",
+      "file_path": "/Users/pranavkhandelwal/Projects/PrintFileSystem/server/uploads/bundle_1788799020921.pdf",
+      "file_name": "bundle_1788799020921.pdf",
+      "file_type": "application/pdf",
+      "pages": 1,
+      "color_mode": "bw",
+      "gsm_name": "70 GSM Standard (Economy)",
+      "orientation": "portrait",
+      "copies": 1,
+      "page_range": "all",
+      "is_duplex": false,
+      "total_amount_inr": 2,
+      "calculation": {
+        "pages": 1,
+        "sheets": 1,
+        "copies": 1,
+        "colorMode": "Black & White",
+        "baseRatePerPage": 2,
+        "gsmTier": "70 GSM Standard (Economy)",
+        "gsmSurcharge": 0,
+        "isDuplex": false,
+        "singleCopyTotal": 2,
+        "grandTotalINR": 2
+      }
+    },
+    {
+      "id": "ord_1788798478558_n05y0",
+      "token_number": "TK-102",
+      "status": "PENDING",
+      "created_at": "2026-09-07T16:27:58.558Z",
+      "printed_at": null,
+      "completed_at": null,
+      "file_deleted": true,
+      "store_id": "store_metro",
+      "original_filename": "Hero_11646CB26V26756 (1).PDF",
+      "file_path": "/Users/pranavkhandelwal/Projects/PrintFileSystem/server/uploads/1788798478483-777039715-Hero_11646CB26V26756__1_.PDF",
+      "file_name": "1788798478483-777039715-Hero_11646CB26V26756__1_.PDF",
+      "file_type": "application/pdf",
+      "pages": 2,
+      "color_mode": "bw",
+      "gsm_tier_id": "gsm_m2",
+      "gsm_name": "80 GSM Premium Paper",
+      "orientation": "portrait",
+      "copies": 1,
+      "page_range": "all",
+      "is_duplex": false,
+      "total_amount_inr": 8,
+      "calculation": {
+        "pages": 2,
+        "sheets": 2,
+        "copies": 1,
+        "colorMode": "Black & White",
+        "baseRatePerPage": 2.5,
+        "gsmTier": "80 GSM Premium Paper",
+        "gsmSurcharge": 1.5,
+        "isDuplex": false,
+        "singleCopyTotal": 8,
+        "grandTotalINR": 8
+      }
+    },
+    {
+      "id": "ord_1788798478530_ligla",
+      "token_number": "TK-101",
+      "status": "PENDING",
+      "created_at": "2026-09-07T16:27:58.530Z",
+      "printed_at": null,
+      "completed_at": null,
+      "file_deleted": true,
+      "store_id": "store_metro",
+      "original_filename": "Hero_11646CB26V26756 (1).PDF",
+      "file_path": "/Users/pranavkhandelwal/Projects/PrintFileSystem/server/uploads/1788798478420-482811159-Hero_11646CB26V26756__1_.PDF",
+      "file_name": "1788798478420-482811159-Hero_11646CB26V26756__1_.PDF",
+      "file_type": "application/pdf",
+      "pages": 2,
+      "color_mode": "bw",
+      "gsm_tier_id": "gsm_m2",
+      "gsm_name": "80 GSM Premium Paper",
+      "orientation": "portrait",
+      "copies": 1,
+      "page_range": "all",
+      "is_duplex": false,
+      "total_amount_inr": 8,
+      "calculation": {
+        "pages": 2,
+        "sheets": 2,
+        "copies": 1,
+        "colorMode": "Black & White",
+        "baseRatePerPage": 2.5,
+        "gsmTier": "80 GSM Premium Paper",
+        "gsmSurcharge": 1.5,
+        "isDuplex": false,
+        "singleCopyTotal": 8,
+        "grandTotalINR": 8
+      }
+    },
+    {
+      "id": "ord_1788795083183_wfsga",
+      "token_number": "TK-101",
+      "status": "COMPLETED",
+      "created_at": "2026-09-07T15:31:23.183Z",
+      "printed_at": null,
+      "completed_at": "2026-09-07T16:23:53.137Z",
+      "file_deleted": true,
+      "store_id": "store_campus",
+      "original_filename": "sample_print_doc.txt",
+      "file_path": "/Users/pranavkhandelwal/Projects/PrintFileSystem/server/uploads/1788795083181-77807087-sample_print_doc.txt",
+      "file_name": "1788795083181-77807087-sample_print_doc.txt",
+      "file_type": "text/plain",
+      "pages": 1,
+      "color_mode": "bw",
+      "gsm_tier_id": "gsm_c2",
+      "gsm_name": "75 GSM Executive Bond",
+      "orientation": "portrait",
+      "copies": 2,
+      "page_range": "all",
+      "is_duplex": false,
+      "total_amount_inr": 6,
+      "calculation": {
+        "pages": 1,
+        "sheets": 1,
+        "copies": 2,
+        "colorMode": "Black & White",
+        "baseRatePerPage": 2,
+        "gsmTier": "75 GSM Executive Bond",
+        "gsmSurcharge": 1,
+        "isDuplex": false,
+        "singleCopyTotal": 3,
+        "grandTotalINR": 6
+      }
+    }
+  ]
+}
