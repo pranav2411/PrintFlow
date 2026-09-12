@@ -1,7 +1,8 @@
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '../.env') });
 const express = require('express');
 const http = require('http');
 const cors = require('cors');
-const path = require('path');
 const fs = require('fs');
 const os = require('os');
 const { Server } = require('socket.io');
@@ -105,7 +106,7 @@ if (fs.existsSync(clientDistPath)) {
 startCleanupScheduler();
 
 const PORT = process.env.PORT || 5050;
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   const localIp = getLocalNetworkIp();
   console.log('\n======================================================');
   console.log('🚀 PrintFlow Production Server Running');
